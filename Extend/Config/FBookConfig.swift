@@ -17,3 +17,5 @@ enum FBookCollectionCellTag : String
 typealias FBookBtnEventHandle = (Void) -> Void;
 let SCREEN_WIDTH = UIScreen.mainScreen().bounds.width;
 let SCREEN_HEIGH = UIScreen.mainScreen().bounds.height;
+let NAVBAR_HEIGHT : CGFloat = 64.0;
+let TOOBAR_HEIGHT : CGFloat = 48.0;

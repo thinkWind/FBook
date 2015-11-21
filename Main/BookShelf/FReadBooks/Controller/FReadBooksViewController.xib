@@ -7,7 +7,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FReadBooksViewController" customModule="FBook" customModuleProvider="target">
             <connections>
+                <outlet property="catalogueBtn" destination="wCj-Gf-mtw" id="dII-KO-sZf"/>
+                <outlet property="navBackBtn" destination="4jW-bp-Jhn" id="5LB-gh-Yqp"/>
+                <outlet property="navBar" destination="FfJ-Lx-1uy" id="aGU-cr-qXw"/>
+                <outlet property="navMoreBtn" destination="HVH-Vq-92C" id="iHS-8o-etu"/>
+                <outlet property="navVieTop" destination="Kbe-T1-SjJ" id="klO-oG-aJm"/>
+                <outlet property="settingBtn" destination="SuF-Za-iiS" id="Hld-VX-6Zv"/>
                 <outlet property="showView" destination="roi-uT-sDQ" id="UoT-D9-ont"/>
+                <outlet property="toolBar" destination="IQj-T0-9xH" id="EjR-mO-SDf"/>
+                <outlet property="toolBarBottom" destination="eRR-fL-M3i" id="wV2-k2-Xlu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,16 +31,92 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfJ-Lx-1uy">
+                    <rect key="frame" x="0.0" y="-64" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-bp-Jhn">
+                            <rect key="frame" x="0.0" y="22" width="52" height="34"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="amy-VB-N1U"/>
+                                <constraint firstAttribute="width" constant="52" id="vn4-zb-ZS6"/>
+                            </constraints>
+                            <state key="normal" image="Back"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVH-Vq-92C">
+                            <rect key="frame" x="263" y="22" width="40" height="34"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Qv3-sy-uIW"/>
+                                <constraint firstAttribute="width" constant="40" id="cgD-WQ-cxc"/>
+                            </constraints>
+                            <state key="normal" image="toolbar_more"/>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.2156862745" green="0.2470588235" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HVH-Vq-92C" secondAttribute="trailing" constant="17" id="Fkc-UN-Qae"/>
+                        <constraint firstItem="4jW-bp-Jhn" firstAttribute="top" secondItem="FfJ-Lx-1uy" secondAttribute="top" constant="22" id="HEU-fr-YYb"/>
+                        <constraint firstAttribute="trailing" secondItem="4jW-bp-Jhn" secondAttribute="trailing" constant="268" id="I5u-B0-aim"/>
+                        <constraint firstAttribute="height" constant="64" id="iRy-Ev-6dN"/>
+                        <constraint firstItem="HVH-Vq-92C" firstAttribute="centerY" secondItem="4jW-bp-Jhn" secondAttribute="centerY" id="yhB-BE-4am"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-T0-9xH">
+                    <rect key="frame" x="0.0" y="568" width="320" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCj-Gf-mtw">
+                            <rect key="frame" x="8" y="2" width="38" height="45"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="38" id="GF4-UT-EIM"/>
+                                <constraint firstAttribute="height" constant="45" id="M5b-Vi-Y1e"/>
+                            </constraints>
+                            <state key="normal" image="toolbar_chapter"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuF-Za-iiS">
+                            <rect key="frame" x="273" y="2" width="37" height="45"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="5PE-a9-12r"/>
+                                <constraint firstAttribute="width" constant="37" id="qf7-LG-2Jt"/>
+                            </constraints>
+                            <state key="normal" image="toolbar_set"/>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.2156862745" green="0.2470588235" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wCj-Gf-mtw" firstAttribute="centerY" secondItem="IQj-T0-9xH" secondAttribute="centerY" id="Aml-nI-9hZ"/>
+                        <constraint firstAttribute="height" constant="48" id="dWK-OZ-37b"/>
+                        <constraint firstItem="wCj-Gf-mtw" firstAttribute="leading" secondItem="IQj-T0-9xH" secondAttribute="leading" constant="8" id="eZ6-CL-kdh"/>
+                        <constraint firstItem="SuF-Za-iiS" firstAttribute="centerY" secondItem="IQj-T0-9xH" secondAttribute="centerY" id="oJT-xe-JEq"/>
+                        <constraint firstAttribute="trailing" secondItem="SuF-Za-iiS" secondAttribute="trailing" constant="10" id="v4M-RM-9PN"/>
+                    </constraints>
+                </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="roi-uT-sDQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Ry-vh-6QO"/>
+                <constraint firstAttribute="trailing" secondItem="FfJ-Lx-1uy" secondAttribute="trailing" id="25L-qu-hbH"/>
+                <constraint firstItem="IQj-T0-9xH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GcX-8o-8gm"/>
+                <constraint firstItem="FfJ-Lx-1uy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-64" id="Kbe-T1-SjJ"/>
                 <constraint firstAttribute="trailing" secondItem="roi-uT-sDQ" secondAttribute="trailing" id="Nd5-9k-OCw"/>
                 <constraint firstItem="roi-uT-sDQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zjj-Lw-nSR"/>
                 <constraint firstAttribute="bottom" secondItem="roi-uT-sDQ" secondAttribute="bottom" id="avb-uf-c3r"/>
+                <constraint firstAttribute="bottom" secondItem="IQj-T0-9xH" secondAttribute="bottom" constant="-48" id="eRR-fL-M3i"/>
+                <constraint firstItem="FfJ-Lx-1uy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uKg-M8-cEp"/>
+                <constraint firstAttribute="trailing" secondItem="IQj-T0-9xH" secondAttribute="trailing" id="zB7-tc-mWq"/>
             </constraints>
             <point key="canvasLocation" x="280" y="355"/>
         </view>
     </objects>
+    <resources>
+        <image name="Back" width="11" height="17"/>
+        <image name="toolbar_chapter" width="29" height="45"/>
+        <image name="toolbar_more" width="23" height="23"/>
+        <image name="toolbar_set" width="29" height="45"/>
+    </resources>
 </document>
